@@ -1,0 +1,78 @@
+! To save run xrdb -all ~/.Xresources
+
+! === X f t ==================================================================
+
+!Xft.antialias:          1
+!Xft.autohint:           0
+!Xft.dpi:                72
+!Xft.hinting:            1
+!Xft.hintstyle:          hintfull
+!Xft.lcdfilter:          lcddefault
+!Xft.rgba:               rgb
+
+! === U R x v t ==============================================================
+
+URxvt.cursorBlink:      true
+URxvt.depth:            24
+URxvt.font:             xft:Terminus:pixelsize=18
+URxvt.inheritPixmap:    true
+URxvt.internalBorder:   4
+URxvt.loginShell:       true
+URxvt.mapAlert:         true
+URxvt.pointerBlank:     true
+URxvt.resource:         value
+URxvt.termName:         xterm-256color
+URxvt.transparent:      true
+URxvt.urgentOnBell:     true
+
+! === Appearance =============================================================
+
+URxvt.foreground:       #D7D0C7
+URxvt.background:       #151515
+
+!black
+URxvt*color0:           #111313
+URxvt*color8:           #424446
+!red
+URxvt*color1:           #9e6b71
+URxvt*color9:           #b69094
+!green
+URxvt*color2:           #719e6b
+URxvt*color10:          #94b690
+!yellow
+URxvt*color3:           #9e986c
+URxvt*color11:          #b5b18f
+!blue
+URxvt*color4:           #6c8b9e
+URxvt*color12:          #90a7b6
+!magenta
+URxvt*color5:           #986b9e
+URxvt*color13:          #b290b6
+!cyan
+URxvt*color6:           #6b9e98
+URxvt*color14:          #90b6b3
+!!white
+URxvt*color7:           #b8baba
+URxvt*color15:          #cdcfce
+
+
+
+! === Scrolling ==============================================================
+
+URxvt.buffered:             true
+URxvt.jumpScroll:           false
+URxvt.saveLines:            1000
+URxvt.scrollBar:            false
+URxvt.scrollTtyKeypress:    true
+URxvt.scrollTtyOutput:      false
+URxvt.scrollWithBuffer:     false
+URxvt.scrollstyle:          plain
+URxvt.secondaryScroll:      false
+
+! === Link opening ===========================================================
+
+URxvt.perl-ext:             default,matcher
+URxvt.cutchars:             `"()'*<>[]{|}"
+URxvt.matcher.pattern.1:    \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+URxvt.matcher.button:       1
+URxvt.urlLauncher:          luakit
